@@ -1,9 +1,8 @@
-🚀 Layer 1 vs Layer 3 Network Usage in HFT Systems
+**🚀 Layer 1 vs Layer 3 Network Usage in HFT Systems**
+
 🟢 Introduction
 
-In the world of High Frequency Trading (HFT), one of the most critical success factors is latency.
-
-We are not talking about milliseconds — we are talking about nanoseconds of competition.
+In the world of High Frequency Trading (HFT), one of the most critical success factors is latency. We are not talking about milliseconds — we are talking about nanoseconds of competition.
 
 In this environment, three core timing components define competitive advantage:
 
@@ -15,7 +14,7 @@ Each of these directly impacts trading performance.
 
 As a result, network design in HFT is not just about connectivity — it becomes part of the trading strategy itself.
 
-🟡 OSI Model and Core Layers (Quick Refresher)
+**🟡 OSI Model and Core Layers (Quick Refresher)**
 
 Network traffic is structured around the OSI model (7 layers).
 
@@ -35,7 +34,7 @@ Is reconstructed in reverse order at the destination
 
 Every additional processing step = additional latency
 
-🔵 Why Layer 3 / Layer 2 Is Not Enough
+**🔵 Why Layer 3 / Layer 2 Is Not Enough**
 
 Traditional network devices (switches and routers) perform multiple operations:
 
@@ -57,7 +56,7 @@ In HFT environments, this becomes a major disadvantage.
 
 Even this level of variability can change order execution priority in matching engines.
 
-🔴 What Is Layer 1 Technology?
+**🔴 What Is Layer 1 Technology?**
 
 Layer 1 devices are not traditional switches.
 
@@ -87,72 +86,75 @@ Apply minimal FPGA-based filtering
 Add nanosecond-precision timestamps
 📌 Real-World Example (HFT Market Data Flow)
 
-Consider a market data feed from an exchange:
+**Consider a market data feed from an exchange:**
 
 Scenario:
 
-A feed handler receives market data from the exchange and sends it to:
+A feed handler receives market data from the exchange and sends it to: Trading engine, Risk engine and Monitoring systems
 
-Trading engine
-Risk engine
-Monitoring systems
 Layer 3 / Layer 2 Approach:
 Switch performs routing decisions
-Buffers may form
-Latency increases
-Jitter is introduced
+ - Buffers may form
+ - Latency increases
+ - Jitter is introduced
+
 Layer 1 Approach:
-Packet is copied directly to multiple ports
-No processing logic
-Deterministic latency
-Near-zero jitter
-⚡ Layer 1 vs Layer 3 Comparison
-Feature	Layer 3 Switch	Layer 1 Device
-Packet analysis	Yes	No
-Routing	Yes	No
-Buffering	Yes	No
-Latency	Microseconds	Nanoseconds
-Jitter	Present	None (deterministic)
-Usage	Enterprise networks	HFT / market data
-🔧 Example Technologies
+ - Packet is copied directly to multiple ports
+ - No processing logic
+ - Deterministic latency
+ - Near-zero jitter
 
-Key players in this space:
+**Key players in this space:**
 
-Arista 7130 Series — FPGA-based ultra-low latency platform
-Cisco Systems Nexus 3550 series (based on acquired Exablaze technology)
+Over time, the FPGA-based low-latency networking space was consolidated by major infrastructure vendors.
 
-These systems:
+🔹 Metamako → Arista Networks
 
-Do not behave like traditional switches
-Operate more like “latency processing engines”
-Are optimized for deterministic market data delivery
-🧪 Where Layer 1 Is Used in HFT
-1️⃣ Market Data Fan-out
+Arista Networks acquired Metamako, a key player in ultra-low latency FPGA switching technologies.
 
-Distributing the same feed to multiple systems simultaneously
+With this acquisition, Arista:
 
-2️⃣ TAP / Packet Capture
+ - Strengthened its Layer 1 FPGA switching capabilities
+ - Gained significant depth in HFT and market connectivity solutions
+ - Expanded its position in the “extreme low latency Ethernet” segment
 
-Zero-impact traffic duplication for analysis and monitoring
+🔹 Exablaze → Cisco
 
-3️⃣ Tick-to-Trade Optimization
+Cisco Systems followed a similar strategy by acquiring Exablaze, integrating FPGA-based ultra-low latency switching technologies into its portfolio.
 
-Minimizing time between data arrival and order generation
+With this move, Cisco:
 
-4️⃣ Failover Feed Switching
+Entered the HFT and financial services infrastructure segment more aggressively
+Enhanced its FPGA-based deterministic switching capabilities
+Became a direct competitor to Arista in low-latency networking
+⚖️ Current Market Structure: Two Dominant Players
 
-Sub-nanosecond failover between primary and backup feeds
+Today, this highly specialized niche market is effectively dominated by two major ecosystems:
 
-5️⃣ Latency Measurement
+🟦 Arista Networks
+🟥 Cisco Systems
 
-Accurate measurement of real network performance
+While other vendors exist, the combination of:
 
-🧠 Key Insight
+ - Ultra low latency
+ - FPGA-based processing
+ - Deterministic networking behavior
+
+has largely consolidated around these two platforms.
+
+**🧪 Where Layer 1 Is Used in HFT**
+1️⃣ Market Data Fan-out: Distributing the same feed to multiple systems simultaneously
+2️⃣ TAP / Packet Capture : Zero-impact traffic duplication for analysis and monitoring
+3️⃣ Tick-to-Trade Optimization: Minimizing time between data arrival and order generation
+4️⃣ Failover Feed Switching: Sub-nanosecond failover between primary and backup feeds
+5️⃣ Latency Measurement: Accurate measurement of real network performance
+
+**🧠 Key Insight**
 
 In HFT systems, the real bottleneck is often not:
 
-Faster CPUs
-Fewer network hops
+ - Faster CPUs
+ - Fewer network hops
 
 But rather:
 
@@ -160,7 +162,7 @@ But rather:
 
 Layer 1 architectures eliminate most of these decision points entirely.
 
-🔵 Conclusion
+**🔵 Conclusion**
 
 In HFT architecture design, network selection is not just infrastructure — it is part of the trading system itself.
 
@@ -169,3 +171,4 @@ Layer 2 → balanced but limited
 Layer 1 → deterministic and ultra-low latency
 
 As HFT systems continue to evolve toward FPGA-centric architectures, networking devices are increasingly transforming from traditional switches into hardware-accelerated data processing platforms.
+
