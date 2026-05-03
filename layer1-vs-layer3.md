@@ -144,9 +144,13 @@ has largely consolidated around these two platforms.
 
 **🧪 Where Layer 1 Is Used in HFT**
 1️⃣ Market Data Fan-out: Distributing the same feed to multiple systems simultaneously
+
 2️⃣ TAP / Packet Capture : Zero-impact traffic duplication for analysis and monitoring
+
 3️⃣ Tick-to-Trade Optimization: Minimizing time between data arrival and order generation
+
 4️⃣ Failover Feed Switching: Sub-nanosecond failover between primary and backup feeds
+
 5️⃣ Latency Measurement: Accurate measurement of real network performance
 
 **🧠 Key Insight**
