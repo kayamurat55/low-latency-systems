@@ -2,7 +2,7 @@
 
 **🚀 Layer 1 vs Layer 3 Network Usage in HFT Systems**
 
-🟢 Introduction
+**🟢 Introduction**
 
 In the world of High Frequency Trading (HFT), one of the most critical success factors is latency. We are not talking about milliseconds — we are talking about nanoseconds of competition.
 
@@ -15,6 +15,7 @@ Order transmission time to the exchange
 Each of these directly impacts trading performance.
 
 As a result, network design in HFT is not just about connectivity — it becomes part of the trading strategy itself.
+
 
 **🟡 OSI Model and Core Layers (Quick Refresher)**
 
@@ -36,9 +37,11 @@ Reaches the physical medium
 
 Is reconstructed in reverse order at the destination
 
+
 **⚠️ Key Insight in HFT Systems**
 
 Every additional processing step = additional latency
+
 
 **🔵 Why Layer 3 / Layer 2 Is Not Enough**
 
@@ -58,6 +61,7 @@ In HFT environments, this becomes a major disadvantage.
 +50 ns jitter variation
 
 Even this level of variability can change order execution priority in matching engines.
+
 
 **🔴 What Is Layer 1 Technology?**
 
@@ -90,6 +94,7 @@ Modern Layer 1 platforms (often FPGA-based) can:
  - Distribute multicast market data feeds
  - Apply minimal FPGA-based filtering
  - Add nanosecond-precision timestamps
+
    
 **📌 Real-World Example (HFT Market Data Flow)**
 
@@ -110,6 +115,7 @@ Layer 1 Approach:
  - No processing logic
  - Deterministic latency
  - Near-zero jitter
+
 
 **Key players in this space:**
 
@@ -150,6 +156,7 @@ While other vendors exist, the combination of:
 
 has largely consolidated around these two platforms.
 
+
 **🧪 Where Layer 1 Is Used in HFT**
 1️⃣ Market Data Fan-out: Distributing the same feed to multiple systems simultaneously
 
@@ -160,6 +167,7 @@ has largely consolidated around these two platforms.
 4️⃣ Failover Feed Switching: Sub-nanosecond failover between primary and backup feeds
 
 5️⃣ Latency Measurement: Accurate measurement of real network performance
+
 
 **🧠 Key Insight**
 
@@ -173,6 +181,7 @@ But rather:
 ❗ Fewer decision points in the network path
 
 Layer 1 architectures eliminate most of these decision points entirely.
+
 
 **🔵 Conclusion**
 
