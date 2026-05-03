@@ -32,7 +32,8 @@ Leaves the source server
 Traverses Layer 3 → Layer 2 → Layer 1
 Reaches the physical medium
 Is reconstructed in reverse order at the destination
-⚠️ Key Insight in HFT Systems
+
+**⚠️ Key Insight in HFT Systems**
 
 Every additional processing step = additional latency
 
@@ -74,21 +75,25 @@ Instead:
 They simply replicate and forward electrical/optical signals.
 
 🧠 Simplified Model
-Layer 3 → analyzes and decides
-Layer 2 → forwards based on MAC
-Layer 1 → behaves like a “smart cable”
+
+ - Layer 3 → analyzes and decides
+ - Layer 2 → forwards based on MAC
+ - Layer 1 → behaves like a “smart cable”
+
+
 ⚙️ What Layer 1 Devices Actually Do
 
 Modern Layer 1 platforms (often FPGA-based) can:
 
-Perform port-to-port traffic replication
-Act as TAP (traffic mirroring) devices
-Distribute multicast market data feeds
-Apply minimal FPGA-based filtering
-Add nanosecond-precision timestamps
-📌 Real-World Example (HFT Market Data Flow)
+ - Perform port-to-port traffic replication
+ - Act as TAP (traffic mirroring) devices
+ - Distribute multicast market data feeds
+ - Apply minimal FPGA-based filtering
+ - Add nanosecond-precision timestamps
+   
+**📌 Real-World Example (HFT Market Data Flow)**
 
-**Consider a market data feed from an exchange:**
+Consider a market data feed from an exchange:
 
 Scenario:
 
@@ -129,6 +134,7 @@ With this move, Cisco:
 Entered the HFT and financial services infrastructure segment more aggressively
 Enhanced its FPGA-based deterministic switching capabilities
 Became a direct competitor to Arista in low-latency networking
+
 ⚖️ Current Market Structure: Two Dominant Players
 
 Today, this highly specialized niche market is effectively dominated by two major ecosystems:
