@@ -1,3 +1,5 @@
+![HFT Architecture](images/layer1-vs-layer3.png)
+
 **🚀 Layer 1 vs Layer 3 Network Usage in HFT Systems**
 
 🟢 Introduction
