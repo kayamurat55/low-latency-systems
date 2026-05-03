@@ -29,8 +29,11 @@ Layer 1 (Physical): Electrical / optical signal transmission
 A packet flow:
 
 Leaves the source server
+
 Traverses Layer 3 → Layer 2 → Layer 1
+
 Reaches the physical medium
+
 Is reconstructed in reverse order at the destination
 
 **⚠️ Key Insight in HFT Systems**
@@ -41,15 +44,12 @@ Every additional processing step = additional latency
 
 Traditional network devices (switches and routers) perform multiple operations:
 
-MAC learning (ARP / flooding mechanisms)
-Routing table lookup
-Packet decision logic
-Buffering / queueing
+ - MAC learning (ARP / flooding mechanisms)
+- Routing table lookup
+- Packet decision logic
+- Buffering / queueing
 
-These operations introduce:
-
-Microsecond-level latency
-Variable delay (jitter)
+These operations introduce: Microsecond-level latency  + Variable delay (jitter)
 
 In HFT environments, this becomes a major disadvantage.
 
