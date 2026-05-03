@@ -188,8 +188,11 @@ Layer 1 architectures eliminate most of these decision points entirely.
 In HFT architecture design, network selection is not just infrastructure — it is part of the trading system itself.
 
 Layer 3 → flexible but slower
+
 Layer 2 → balanced but limited
+
 Layer 1 → deterministic and ultra-low latency
+
 
 As HFT systems continue to evolve toward FPGA-centric architectures, networking devices are increasingly transforming from traditional switches into hardware-accelerated data processing platforms.
 
